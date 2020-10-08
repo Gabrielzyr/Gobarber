@@ -12,6 +12,4 @@ class AppointmentsRepository extends Repository<Appointment> {
   }
 }
 
-// const response = await findByDate(date)
-
 export default AppointmentsRepository;
