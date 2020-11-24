@@ -31,8 +31,17 @@
       {
         "ts": "never"
       }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+       "prefix": ["I"]
+      }
     ]
   },
+
   "settings": {
     "import/resolver": {
       "typescript": {}
