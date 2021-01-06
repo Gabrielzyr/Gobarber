@@ -1,5 +1,5 @@
 import CreateUserService from '@modules/users/services/CreateUserService';
-import UserMap from '@shared/infra/http/routes/mappers/UserMap';
+import { classToClass } from 'class-transformer';
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
@@ -15,8 +15,6 @@ export default class UsersController {
       password,
     });
 
-    const mappedUser = UserMap.toDTO(user);
-
-    return response.json(mappedUser);
+    return response.json({ user: classToClass(user) });
   }
 }
