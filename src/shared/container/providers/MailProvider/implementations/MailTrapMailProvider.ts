@@ -17,8 +17,8 @@
 //       port: 25 || 465 || 587 || 2525,
 //       // secure: account.smtp.secure,
 //       auth: {
-//         user: '43d773adadc224',
-//         pass: '1a75553f76045a',
+//         user: '',
+//         pass: '',
 //       },
 //     });
 
