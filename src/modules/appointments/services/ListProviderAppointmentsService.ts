@@ -42,9 +42,6 @@ class ListProviderAppointmentsService {
         },
       );
 
-      console.log('Buscou dados');
-      console.log(cacheKey);
-
       await this.cacheProvider.save(cacheKey, appointments);
     }
 
