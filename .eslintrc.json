@@ -23,7 +23,12 @@
     "camelcase":"off",
     "no-useless-constructor": "off",
     "class-methods-use-this":"off",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern": "_"
     }],
